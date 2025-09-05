@@ -56,5 +56,5 @@ body {
 
 @keyframes moveBall {
     0% {transform: translateY(0);}
-    100% {transform: translateY(calc(100vh - 100px));}
+    100% {transform: translateY(calc(100vh - 80px));}
 }

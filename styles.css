@@ -1,60 +1,78 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: linear-gradient(to right, #bbbfc7, #005eff);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: linear-gradient(to right, #bbbfc7, #005eff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .login-form button {
-    border-radius: 5px;
-    background-color: #005eff;
-    color: white;
-    cursor: pointer;
-    border: none;
-    padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  background-color: #005eff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px 5px 10px;
 }
 
 .login-form input {
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #bbbfc7;
-    padding: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #bbbfc7;
+  padding: 10px;
 }
 
 .login-form button:hover {
-    background-color: black;
-    transition: ease 3s;
+  background-color: black;
+  transition: ease 3s;
 }
 
 .ball {
-    position: absolute;
-    top: 0;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: black;
-    animation-name: moveBall;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: black;
+  animation-name: moveBall;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: -1;
+}
+
+.ball {
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(151, 3, 3);
+  animation-name: moveBall;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: -1;
 }
 
 @keyframes moveBall {
-    0% {transform: translateY(0);}
-    100% {transform: translateY(calc(100vh - 80px));}
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(100vh - 80px));
+  }
 }

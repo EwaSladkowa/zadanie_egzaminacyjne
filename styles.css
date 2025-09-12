@@ -37,7 +37,7 @@ body {
 
 .login-form button:hover {
     background-color: black;
-    transition: ease;
+    transition: ease 3s;
 }
 
 .ball {
